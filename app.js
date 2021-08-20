@@ -66,7 +66,7 @@ function callFelino() {
         descricao.innerHTML = listadeFelinos[contador].description;
 
         let createdAt = document.createElement("h6");
-        createdAt.innerHTML = listadeFelinos[contador].createdAt.slice(0, 10);
+        createdAt.innerHTML = "Criado em " + listadeFelinos[contador].createdAt.slice(0, 10);
 
 
         body.appendChild(card);
