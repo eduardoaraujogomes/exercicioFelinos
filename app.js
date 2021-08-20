@@ -75,9 +75,7 @@ function callFelino() {
         card.appendChild(imgUrl);
         card.appendChild(descricao);
         card.appendChild(createdAt);
-
+        
+        contador++;
     }
-
-    contador++;
-
 }
