@@ -50,8 +50,6 @@ let contador = 0;
 
 function callFelino() {
     let body = document.body;
-    let botao = document.getElementsByClassName('botao');
-
 
     if (contador < 6) {
         let card = document.createElement("DIV");
@@ -75,7 +73,7 @@ function callFelino() {
         card.appendChild(imgUrl);
         card.appendChild(descricao);
         card.appendChild(createdAt);
-        
+
         contador++;
     }
 }
