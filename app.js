@@ -77,3 +77,14 @@ function callFelino() {
         contador++;
     }
 }
+
+function removerFelino() {
+    if (contador > 0) {
+
+        let todosCards = document.querySelectorAll("div");
+        let ultimoCard = todosCards[todosCards.length - 1];
+
+        ultimoCard.remove();
+
+    }
+}
