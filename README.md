@@ -3,7 +3,7 @@
 
 
 ## Sobre o projeto
-Exercício da matéria de Front end II do CTD, que pedia para inserir os dados pelo Javascript através da manipulação do **DOM**_Document Object Model_.
+Exercício da matéria de Front end II do CTD, que pedia para inserir os dados pelo Javascript através da manipulação do **DOM**(_Document Object Model_).
 Aproveitei para adicionar um pouco de estilo e trabalhei utilizando display **Flex**.
 
 ## Como funciona?
