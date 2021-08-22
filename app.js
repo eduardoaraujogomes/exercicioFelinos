@@ -47,6 +47,16 @@ const listadeFelinos = [
 ];
 
 let contador = 0;
+let botaoAdicionar = document.querySelector(".adicionar");
+console.log(botaoAdicionar);
+
+let botaoRemover = document.querySelector(".remover");
+console.log(botaoRemover);
+
+
+if (contador == 0) {
+    botaoRemover.style.display = "none";
+}
 
 function callFelino() {
     let body = document.body;
@@ -75,6 +85,12 @@ function callFelino() {
         card.appendChild(createdAt);
 
         contador++;
+        console.log(contador);
+        if (contador === listadeFelinos.length) {
+            botaoAdicionar.style.display = "none";
+        } else {
+            botaoRemover.style.display = "inline-block";
+        }
     }
 }
 
@@ -83,9 +99,12 @@ function removerFelino() {
 
         let todosCards = document.querySelectorAll("div");
         let ultimoCard = todosCards[todosCards.length - 1];
-
         ultimoCard.remove();
         contador--;
-
+        console.log(contador);
+        botaoAdicionar.style.display = "inline-block";
+    }
+    if (contador == 0) {
+        botaoRemover.style.display = "none";
     }
 }
