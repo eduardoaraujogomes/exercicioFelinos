@@ -47,11 +47,8 @@ const listadeFelinos = [
 ];
 
 let contador = 0;
-let botaoAdicionar = document.querySelector(".adicionar");
-console.log(botaoAdicionar);
-
-let botaoRemover = document.querySelector(".remover");
-console.log(botaoRemover);
+let botaoAdicionar = document.getElementById("adicionar");
+let botaoRemover = document.getElementById("remover");
 
 
 if (contador == 0) {
