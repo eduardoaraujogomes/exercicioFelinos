@@ -85,6 +85,7 @@ function removerFelino() {
         let ultimoCard = todosCards[todosCards.length - 1];
 
         ultimoCard.remove();
+        contador--;
 
     }
 }
